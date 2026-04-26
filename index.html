@@ -31,9 +31,8 @@
                                                                               `''`
     </pre>
     
-    <div id="app" style="border: 1px dashed black; padding: 20px; max-width: 300px; text-align: center;">
-        [ El reproductor Winamp se cargará aquí ]
-    </div>
+    <div id="app" style="position: relative; height: 360px; width: 275px; margin: 20px 0;">
+        </div>
 
     <br><br>
 
@@ -97,6 +96,13 @@
 
         // 3. SOLUCIÓN AL ERROR DE LISTA: Array limpio y estructurado
         const webamp = new Webamp({
+
+
+            initialSkin: {
+                url: "Twilight_a_Lain_Skin.wsz" // Pon el nombre exacto de tu archivo .wsz
+            },
+
+            
             initialTracks: [
                 {
                     metaData: { artist: "ifyouwere", title: "0_descubrirflores" },
